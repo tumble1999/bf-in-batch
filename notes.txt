@@ -1,0 +1,37 @@
+%p%=0
+
+mkdir memory
+cd memory
+
+START
+set p_value=0
+set /p p_value=<%p%.txt
+
+>
+set /a p+=1
+
+<
+set /a p-=1
+
++
+set /a p_value+=1
+
+-
+set /a p_value-=1
+
+.
+echo %p_char%
+
+,
+set /p p_char=
+
+[
+for /L %%a IN (1,0,2) DO (
+
+]
+if %p_char%==0 exit
+)
+
+
+END
+echo %p_value%>%p.txt%
