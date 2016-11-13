@@ -1,0 +1,14 @@
+
+REM ==STOP PROGRAM==
+:END
+cd %~p0
+pause
+echo Closing...
+if %1==self-delete (
+echo del %0>tmp.bat
+echo exit>>tmp.bat
+start tmp.bat
+ping 127.0.0.1>nul
+del tmp.bat
+exit
+)

@@ -1,0 +1,5 @@
+
+REM ==END LOOP==
+if !p_value!==0 goto :END_LOOP
+)
+:END_LOOP

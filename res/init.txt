@@ -1,0 +1,12 @@
+@echo off
+setlocal EnableDelayedExpansion
+set /a p=0
+
+REM ==INITIALISATION==
+if exist memory (
+del memory\* /q
+rem rmdir memory
+)
+mkdir memory
+cd memory
+cls

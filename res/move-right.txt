@@ -1,0 +1,3 @@
+
+REM ==MOVE POINTER RIGHT==
+set /a p+=1
